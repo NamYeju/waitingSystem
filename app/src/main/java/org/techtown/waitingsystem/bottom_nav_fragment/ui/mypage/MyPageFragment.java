@@ -15,15 +15,12 @@ import android.view.ViewGroup;
 import org.techtown.waitingsystem.R;
 
 public class MyPageFragment extends Fragment {
-
-    public MyPageFragment(){
-
-    }
-
+    private View view;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.my_page_fragment, container, false);
+        view = inflater.inflate(R.layout.my_page_fragment, container, false);
+        return view;
     }
 
 }
